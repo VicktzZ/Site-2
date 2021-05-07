@@ -1,0 +1,9 @@
+@import url(global.css);
+
+.card{
+    background-image: url(../img/joinha.jpg);
+}
+
+.card p, .card-wrapper::before{
+    color: black;
+}

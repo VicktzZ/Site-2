@@ -18,22 +18,27 @@ body{
 #menu-fixed{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
     gap: 20px;
-    background-color: rgba(35,35,35, 0.6);
+    background-color: rgba(35,35,35, 0.75);
     height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 0 3rem 0 3rem;
     visibility: visible;
     z-index: 2;
 }
 
 #menu-fixed div{
+    display: inline-flex;
+}
+
+#menu-fixed #login_register{
     display: flex;
-    margin-left: 35.5rem;
     align-items: center;
     justify-content: right;
+    padding-right: 3.5rem;
 }
 
 .op{
@@ -86,7 +91,7 @@ h2{
 a{
     color: #fff;
     font-size: 24px;
-    padding: 1rem 4rem;
+    padding: 1em 4rem;
     border: 1px solid #fff;
     display: flex;   
     justify-content: center;
@@ -391,9 +396,9 @@ footer{
 
 /** RESPONSIVIDADE */
 
-@media (min-width: 801px){
+@media (max-width: 800px){
     #menu-fixed .op{
-        visibility: visible;
+        visibility: hidden;
     }
 }
 

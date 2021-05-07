@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/jogos.css">
+    <link rel="stylesheet" href="css/jogos/jogo-da-velha.css">
     <title>Site do Vitão</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div>
             <a href="index.html" class="op">Home</a>
             <a href="#" class="op">Chat</a>
-            <a href="#" class="op">Jogos</a>
+            <a href="jogos.html" class="op">Jogos</a>
         </div>
         <div id="login_register">
             <a href="#" class="op">Login/Register</a>
@@ -21,7 +21,7 @@
     <main class="wrapper">
         <header>
             <h1>SITE DO VITÃO</h1>
-            <h2>Jogos</h2>
+            <h2>Jogo da Velha</h2>
                 <div class="social-media"></div>
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="toggle">
@@ -52,54 +52,59 @@
         </header>
     </main>
     <section class="container">
-        <div class="card-container">
-            <div class="card-text">
-                O Jogo da Velha! Coloque seu ícone em uma filera de 3 numa coluna, linha reta ou diagonal e pontue! Clique no card para jogar!
+        <div class="game-box">
+            <h1 class="velha">
+                Jogo da Velha
+            </h1>
+
+            <div>
+                <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-            <a href="jogo-da-velha.html" class="card card1">
-                <div class="card-wrapper">
-                    <h2>Jogo da Velha</h2>
-                    <p>Clique para jogar!</p>
-                </div>
-            </a>
-        </div>
-        <div class="card-container">
-            <a href="jogo-da-memoria.html" class="card card2">
-                <div class="card-wrapper">
-                    <h2>Jogo da Memória</h2>
-                    <p>Clique para jogar!</p>
-                </div>
-            </a>
-            <div class="card-text">
-                Jogo da memória no estilo Genius! Advinhe a sequência e pontue o máximo possível! Clique no card para jogar!
+
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-        </div>
-        <div class="card-container">
-            <div class="card-text">
-                O bom e velho Jogo da Cobrinha! Por quanto tempo você consegue sobreviver? Clique no card para jogar!
+
+            <div>
+                <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-            <a href="jogo-da-cobra.html" class="card card3">
-                <div class="card-wrapper">
-                    <h2>Jogo da Cobrinha</h2>
-                    <p>Clique para jogar!</p>
-                </div>
-            </a>
-        </div>
-        <div class="card-container">
-            <a href="jogo-do-dinossauro.html" class="card card4">
-                <div class="card-wrapper">
-                    <h2>Jogo do Dinossauro</h2>
-                    <p>Clique para jogar!</p>
-                </div>
-            </a>
-            <div class="card-text">
-                O famoso Jogo do Dinossauro da Google quando acaba a internet! Clique no card ao para jogar!
+
+            <div class="jogador">
+                <label>
+                    Jogador:
+                </label>
+                <label id="jogador-selecionado">
+
+                </label>
             </div>
+
+            <div class="vencedor">
+                <label>
+                    Vencedor:
+                </label>
+                <label id="vencedor-selecionado">
+
+                </label>
+            </div>
+
+            <div>
+                <a href="#" class="botao" onclick="reiniciar()">
+                    Reiniciar
+                </a>
+            </div>
+
         </div>
     </section>
     <footer>
         <p><b>Site do Vitão</b> é marca registrada da Daten Tecnologia®. Todos os direitos reservados.  DATEN TECNOLOGIA LTDA - CNPJ: 04.202.719/0501-91 - End: Rodovia Ilhéus - Uruçúca, s/n, Km 3, Íguape – Ilhéus – BA • CEP: 15.758-635</p>
     </footer>
+    <script src="js/jogos/velha.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

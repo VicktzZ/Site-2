@@ -112,8 +112,7 @@ function checaSequencia(quadrado1, quadrado2, quadrado3) {
     return eigual;
 }
 
-function reiniciar()
-{
+function reiniciar(){
     vencedor = null;
     vencedorSelecionado.innerHTML = '';
 

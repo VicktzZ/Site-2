@@ -1,0 +1,42 @@
+@import url(../global.css);
+
+#snake{
+    border: 1px solid black;
+}
+
+.cobra{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    color: rgb(52, 165, 52);
+}
+.cobra h1{
+    margin: 2rem;
+}
+
+.botao{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.botao:hover{
+    color: #141414;
+    background-color: white;
+}
+
+/** RESPONSIVIDADE */
+
+@media(max-width:800px){
+    .cobra{
+        width: 30vw;
+        margin-top: 10vh;
+    }
+
+    .cobra h1{
+        visibility: hidden;
+    }
+}

@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(../global.css);
 
 .quadrado{
     text-align: center;
@@ -41,4 +41,18 @@
 
 .velha{
     margin-bottom: 2rem;
+}
+
+/** RESPONSIVIDADE */
+
+@media(max-width: 800px){
+    .quadrado{
+        width: 90px;
+        font-size: 40px;
+    }
+    
+    .velha{
+        margin-top: 2.5rem;
+        
+    }
 }

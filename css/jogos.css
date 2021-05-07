@@ -7,7 +7,7 @@
 
 
 .card-text{
-    width: 30%;
+    width: 40%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -16,8 +16,8 @@
 }
 
 .card:hover > .card-wrapper::before{
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
 }
 
 .card-wrapper h2 {
@@ -48,32 +48,26 @@
 }
 
 .card{
-    background-image: url(../img/velha.png);
+    background-image: url(../img/jogos/cards/velha.png);
     height: 15rem;
     width: 15rem;
-}
-
-.card .card1{
-    background-image: url(../img/velha.png);
-    height: 15rem;
-    width: 15rem;
-}
-
-.card h2, .card p{
-    text-shadow: black 2px 2px 2px;
 }
 
 .card2{
-    background-image: url();
+    background-image: url(../img/jogos/cards/memoria.png);
 }
 
 .card3{
-    background-image: url();
+    background-image: url(../img/jogos/cards/cobra.png);
 }
 
 
 .card4{
-    background-image: url();
+    background-image: url(../img/jogos/cards/dinossauro.png);
+}
+
+.card h2, .card p{
+    text-shadow: black 2px 2px 2px;
 }
 
 /** JOGO  */
@@ -84,4 +78,12 @@
     justify-content: space-evenly;
     box-shadow: black 5px 20px 20px;
     width: 80%;
+}
+
+/** RESPONSIVIDADE */
+
+@media(max-width: 800px){
+    .card-text{
+        width: 90%;
+    }
 }

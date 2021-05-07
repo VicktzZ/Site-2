@@ -1,0 +1,44 @@
+@import url(global.css);
+
+.quadrado{
+    text-align: center;
+    width: 120px;
+    background: #eee;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+}
+
+.jogador, .vencedor{
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    cursor: pointer;
+}
+.botao:hover{
+    color: black;
+    background-color: #eee;
+}
+
+.velha, label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.velha{
+    margin-bottom: 2rem;
+}

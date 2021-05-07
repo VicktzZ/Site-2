@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jogo_da_velha.css">
     <title>Site do Vitão</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
     <main class="wrapper">
         <header>
             <h1>SITE DO VITÃO</h1>
-            <h2>Home</h2>
+            <h2>Jogo da Velha</h2>
                 <div class="social-media"></div>
                 <div class="checkbox-wrapper">
                     <input type="checkbox" id="toggle">
@@ -50,43 +50,59 @@
         </header>
     </main>
     <section class="container">
-        <div class="card-container">
-            <div class="card-text">
-                 Você pode clicar no card ao lado para saber mais sobre meus projetos! O link irá redireciona-lo para minha página principal do GitHub, onde você pode ver todos meus trabalhos feitos até agora!
+        <div class="game-box">
+            <h1 class="velha">
+                Jogo da Velha
+            </h1>
+
+            <div>
+                <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-            <a href="#" class="card">
-                <div class="card-wrapper">
-                    <h2>Github</h2>
-                    <p>Veja Meus projetos!</p>
-                </div>
-            </a>
-        </div>
-        <div class="card-container">
-            <a href="#" class="card card2">
-                <div class="card-wrapper">
-                    <h2>Suporte</h2>
-                    <p>Seja ajudado ou ajude-nos!</p>
-                </div>
-            </a>
-            <div class="card-text">
-                Aqui é onde você pode nos contactar diretamente. Se você precisa de ajuda, deseja fazer uma pergunta ou uma sugestão, você pode clicar no card para saber mais!
+
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-        </div>
-        <div class="card-container">
-            <div class="card-text">
-                Olá! Meu nome é <b>Vitor Hugo Rodrigues dos Santos</b> e tenho 16 anos. No momento sou um estudante de TI da instituição Centro Paula Souza ETEC Uirapuru e eu fundei esse site como forma de lazer e diversão!
+
+            <div>
+                <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
             </div>
-            <a href="#" class="card card3">
-                <div class="card-wrapper">
-                    <h2>Sobre</h2>
-                    <p>Clique aqui para ler mais!</p>
-                </div>
-            </a>
+
+            <div class="jogador">
+                <label>
+                    Jogador:
+                </label>
+                <label id="jogador-selecionado">
+
+                </label>
+            </div>
+
+            <div class="vencedor">
+                <label>
+                    Vencedor:
+                </label>
+                <label id="vencedor-selecionado">
+
+                </label>
+            </div>
+
+            <div>
+                <a href="#" class="botao" onclick="reiniciar()">
+                    Reiniciar
+                </a>
+            </div>
+
         </div>
     </section>
     <footer>
         <p><b>Site do Vitão</b> é marca registrada da Daten Tecnologia®. Todos os direitos reservados.  DATEN TECNOLOGIA LTDA - CNPJ: 04.202.719/0501-91 - End: Rodovia Ilhéus - Uruçúca, s/n, Km 3, Íguape – Ilhéus – BA • CEP: 15.758-635</p>
     </footer>
+    <script src="js/jogos/velha.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

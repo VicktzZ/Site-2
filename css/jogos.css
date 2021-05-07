@@ -1,0 +1,87 @@
+@import url(global.css);
+
+.card{
+    height: 220px;
+    width: 22   0px;
+}
+
+
+.card-text{
+    width: 30%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card:hover > .card-wrapper::before{
+    height: 180px;
+    width: 180px;
+}
+
+.card-wrapper h2 {
+    font-size: 1.5rem;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card a{
+    color: #fff;
+    font-size: 24px;
+    padding: 1rem 4rem;
+    border: 1px solid #fff;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    color: white;
+}
+
+.card{
+    background-image: url(../img/velha.png);
+    height: 15rem;
+    width: 15rem;
+}
+
+.card .card1{
+    background-image: url(../img/velha.png);
+    height: 15rem;
+    width: 15rem;
+}
+
+.card h2, .card p{
+    text-shadow: black 2px 2px 2px;
+}
+
+.card2{
+    background-image: url();
+}
+
+.card3{
+    background-image: url();
+}
+
+
+.card4{
+    background-image: url();
+}
+
+/** JOGO  */
+
+.game-box{
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: black 5px 20px 20px;
+    width: 80%;
+}

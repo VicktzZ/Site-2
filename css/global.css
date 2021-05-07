@@ -285,6 +285,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
     filter: grayscale(0.7);
     color: white;
     cursor: pointer;
@@ -344,6 +345,7 @@ a:hover{
 }
 
 .card:hover{
+    color: white;
     filter: unset
 }
 

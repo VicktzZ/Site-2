@@ -1,3 +1,9 @@
-let menu = document.querySelector(".wrapper").style.top = 0
+window.onscroll = function() {scrollFunction()};
 
-if(menu)
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("menu-fixed").style.backgroundColor = "rgba(35,35,35, 0.9)"
+  } else {
+    document.getElementById("menu-fixed").style.backgroundColor = "rgba(35,35,35, 0.0)"
+  }
+}

@@ -2,7 +2,7 @@
 
 .card{
     height: 220px;
-    width: 22   0px;
+    width: 220px;
 }
 
 
@@ -64,6 +64,10 @@
 
 .card4{
     background-image: url(../img/jogos/cards/dinossauro.png);
+}
+
+.card5{
+    background-image: url(../img/jogos/site_jogo.jpeg);
 }
 
 .card h2, .card p{

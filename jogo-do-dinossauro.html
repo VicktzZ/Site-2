@@ -11,11 +11,29 @@
     <div id="menu-fixed">
         <div>
             <a href="index.html" class="op">Home</a>
-            <a href="#" class="op">Chat</a>
+            <a href="chat.html" class="op">Chat</a>
             <a href="jogos.html" class="op">Jogos</a>
         </div>
         <div id="login_register">
-            <a href="#" class="op">Login/Register</a>
+            <a href="#" id="modal_btn" class="op">Login/Register</a>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="login">
+                        <h2>Login</h2>
+                        <p>Email:</p><span>*</span><input type="email" required>
+                        <p>Senha:</p><span>*</span><input type="password" required>
+                    </div>
+                    <div class="register">
+                        <h2>Register</h2>
+                        <p>Email:</p><span>*</span><input type="email" required>
+                        <p>Senha:</p><span>*</span><input type="password" required>
+                        <p>Senha:</p><span>*</span><input type="password" required>
+                        <p>Senha:</p><span>*</span><input type="password" required>
+                        <p>Senha:</p><span>*</span><input type="password" required>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <main class="wrapper">
@@ -40,7 +58,7 @@
                                 <a href="#">Login/Register</a>
                             </li>
                             <li>
-                                <a href="#">Chat</a>
+                                <a href="chat.html">Chat</a>
                             </li>
                             <li>
                                 <a href="jogos.html">Jogos</a>
@@ -61,6 +79,7 @@
     <footer>
         <p><b>Site do Vitão</b> é marca registrada da Daten Tecnologia®. Todos os direitos reservados.  DATEN TECNOLOGIA LTDA - CNPJ: 04.202.719/0501-91 - End: Rodovia Ilhéus - Uruçúca, s/n, Km 3, Íguape – Ilhéus – BA • CEP: 15.758-635</p>
     </footer>
+    <script src="js/modal.js"></script>
     <script src="js/jogos/dinossauro.js"></script>
     <script src="js/script.js"></script>
 </body>

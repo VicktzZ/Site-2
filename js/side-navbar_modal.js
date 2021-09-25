@@ -1,4 +1,4 @@
-let modal = document.querySelector(".modal")
+let modal = document.querySelector("#myModal")
 
 let btn = document.querySelector("#modal_btn")
 

@@ -21,13 +21,20 @@
     <main class="wrapper">
         <header>
             <h1>JOGO DO VITÃO</h1>
-            <h2>Dinheiro: 0</h2>
-            <button>Click</button>
+            <h2>Dinheiro: <span class="dinheiro">0</span></h2>
+            <button class="clicker">Click</button>
             <div id="side-navbar">
-                <nav href="" id="shop">Shop</nav>
-                <nav href="" id="upgrades">Upgrades</nav>
-                <nav href="" id="reliquias">Relíquias</nav>
-                <nav href="" id="reset">Reset</nav>
+                <nav id="shop">
+                    Shop
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="upgrades">Upgrades</nav>
+                <nav id="reliquias">Relíquias</nav>
+                <nav id="reset">Reset</nav>
             </div>
                 <div class="social-media"></div>
                 <div class="checkbox-wrapper">
@@ -60,13 +67,14 @@
     </main>
     <section class="container">
             <div class="card-container">
-                <div class="card-text">Seja Bem vindo ao <b>JOGO DO VITÃO!</b> Nesse jogo, você é um simples empresário que está com o objetivo de fundar a maior e melhor empresa do mundo! Você deve aprimorar sua empresa e conseguir o máximo de dinheiro possível! Clique no botão acima para começar a gerar renda!</div>
+                <div class="card-text" data-tooltip="Clique aqui para comprar espada e aumentar +1ATK do seu personagem!">Seja Bem vindo ao <b>JOGO DO VITÃO!</b> Nesse jogo, você é um simples empresário que está com o objetivo de fundar a maior e melhor empresa do mundo! Você deve aprimorar sua empresa e conseguir o máximo de dinheiro possível! Clique no botão acima para começar a gerar renda!</div>
             </div>
         </div>
     </section>
     <footer>
         <p><b>Jogo do Vitão</b> é marca registrada da Daten Tecnologia®. Todos os direitos reservados.  DATEN TECNOLOGIA LTDA - CNPJ: 04.202.719/0501-91 - End: Rodovia Ilhéus - Uruçúca, s/n, Km 3, Íguape – Ilhéus – BA • CEP: 15.758-635</p>
     </footer>
+    <script src="../js/jogos/modal_game.js"></script>
     <script src="../js/jogos/jogo_site.js"></script>
     <script src="../js/script.js"></script>
 </body>

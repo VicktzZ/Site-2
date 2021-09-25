@@ -70,7 +70,7 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 
-.modal .login{
+.modal #login{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -78,7 +78,7 @@ body{
     margin: 1rem;
 }
 
-.modal .register{
+.modal #register{
     display: flex;
     align-items: center;
     justify-content: right;
@@ -86,17 +86,20 @@ body{
     margin: 1rem;
 }
 
-.modal input{
-    height: 1.5rem;
-}
-
-.modal-content {
+.modal-content{
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
     height: 25rem;
+}
+
+.lg_rg{
+    width: 100%;
+    padding: 0 2.5rem 0 2.5rem;
+    display: inline-block;
+    justify-content: space-between;
 }
 
 .close {
@@ -165,7 +168,7 @@ a{
 }
 
 #menu-fixed a{
-    width: 10rem;
+    width: 9.2rem;
 }
 
 #menu-fixed a:hover{

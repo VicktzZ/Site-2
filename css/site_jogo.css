@@ -1,9 +1,13 @@
 @import url(jogos.css);
 
-header{
-    background: linear-gradient(-45deg, rgb(68, 150, 1), #1dd80c, rgb(0, 224, 67));
+@font-face {
+  font-family: 'Pixeled';
+  src: url(../fonts/Commodore\ Pixeled.ttf);
 }
 
+*:not(footer p){
+  font-family: 'Pixeled';
+}
 
 header{
     background: linear-gradient(-45deg, rgb(0, 134, 67), #05bb42, rgb(56, 218, 16));
@@ -14,8 +18,10 @@ header{
     align-items: center;
     animation: backgroundTransition 8s ease-in-out infinite;
   }
-  
-header button{
+
+ /** CLICKER */
+
+.clicker{
     color: #fff;
     font-size: 24px;
     padding: 1em 4rem;
@@ -28,16 +34,24 @@ header button{
     transition: 0.3s cubic-bezier(0.55, 0.025, 0.675, 0.97);
     cursor: pointer;
     opacity: 1;
+    overflow: hidden;
 }
 
-header button:hover{
-  color: #202020;
-  background-color: #fff;
+
+.clicker:hover{
+    color: #202020;
+    background-color: #fff;
 } 
 
+
+/** TEXTO */
+
 .card-text{
-    width: 75%;
+  width: 75%;
 }
+
+
+/** SIDE-NAVBAR */
 
 #side-navbar nav{
     display: flex;
@@ -54,6 +68,7 @@ header button:hover{
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+
 
 #side-navbar nav:hover {
     left: 0;
